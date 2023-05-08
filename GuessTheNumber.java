@@ -11,14 +11,14 @@ class Game {
 	
 	Game() {
 		Random random = new Random();
-		this.systemInput = random.nextInt(50) + 1;
+		this.systemInput = random.nextInt(100) + 1;
 	}
 
 
 	public boolean takeUserInput() {
 		if ( noOfGuesses < 5 ) {
 			System.out.print("Guess the number : ");
-			this.userInput = GuessTheNumber.takeIntegerInput(50);
+			this.userInput = GuessTheNumber.takeIntegerInput(100);
 			noOfGuesses++;
 			return false;
 		}
